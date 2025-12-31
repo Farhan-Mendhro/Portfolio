@@ -1,0 +1,69 @@
+
+Create a modern, professional student portfolio website for a DevOps Engineer in training. 
+
+DESIGN REQUIREMENTS:
+- Clean, minimal, and tech-focused design
+- Dark theme with accent colors (think developer/terminal aesthetic)
+- Fully responsive (mobile-friendly)
+- Single-page layout with smooth scrolling navigation
+
+SECTIONS TO INCLUDE:
+
+1. HERO/HEADER
+   - Name: "Farhan Mendhro"
+   - Title: "DevOps Engineer in Training"
+   - Tagline: "Building skills in Cloud Infrastructure, Containerization & Automation"
+   - CTA buttons: "View My Learning Path" and "Connect With Me"
+
+2. ABOUT
+   - Brief intro (2-3 sentences) about transitioning to DevOps
+   - Mention passion for infrastructure automation and building reliable systems
+   - Started DevOps journey in August 2024
+
+3. LEARNING PATH
+   - Visual roadmap/timeline showing:
+     ✅ Linux & Networking (completed)
+     🔄 Docker (in progress)
+     🔄 AWS (in progress)
+     ⏳ Python
+     ⏳ Kubernetes
+     ⏳ Ansible
+     ⏳ Terraform & Jenkins
+     ⏳ Prometheus & Grafana
+   - Use icons or progress indicators for visual appeal
+
+4. CERTIFICATIONS & BADGES
+   - Section for AWS Educate badges
+   - Link to Credly profile: https://www.credly.com/users/farhan-mendhro/badges
+   - Display badge icons if possible
+
+5. SKILLS
+   - Tech stack display with icons/logos:
+     Currently Learning: Docker, AWS (EC2, S3, IAM), Linux, Git
+     Next Up: Python, Kubernetes, Ansible, Terraform, Jenkins, Prometheus, Grafana
+
+6. PROJECTS (placeholder for now)
+   - Section with message: "Projects coming soon as I progress through my learning path"
+   - Prepare card layout for future project additions
+
+7. CONTACT/FOOTER
+   - GitHub link
+   - LinkedIn link
+   - Email
+   - Credly profile link
+
+TECHNICAL SPECS:
+- Use HTML, CSS, and vanilla JavaScript (no frameworks needed)
+- Include Font Awesome or similar for icons
+- Smooth scroll behavior
+- Hover effects on buttons and links
+- Terminal/code-like font for headings (e.g., 'Fira Code', 'JetBrains Mono', or 'Roboto Mono')
+
+STYLE PREFERENCES:
+- Dark background (#0f172a or similar)
+- Accent color: Blue/cyan (#3b82f6 or #06b6d4)
+- Clean typography with good spacing
+- Subtle animations (fade-in on scroll, hover effects)
+- Professional but not corporate - think GitHub/GitLab aesthetic
+
+Make it look modern and professional while clearly communicating that I'm a student actively learning DevOps.
