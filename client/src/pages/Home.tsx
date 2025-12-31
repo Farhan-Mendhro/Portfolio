@@ -39,14 +39,14 @@ const ResumeModal = ({ children }: { children: React.ReactNode }) => {
       <DialogTrigger asChild>
         {children}
       </DialogTrigger>
-      <DialogContent className="max-w-4xl max-h-[90vh] bg-background border-white/10 overflow-hidden flex flex-col p-0">
-        <DialogHeader className="p-6 border-b border-white/5">
+      <DialogContent className="max-w-4xl h-[90vh] bg-background border-white/10 overflow-hidden flex flex-col p-0">
+        <DialogHeader className="p-6 border-b border-white/5 shrink-0">
           <DialogTitle className="font-mono text-xl flex items-center gap-2">
             <FileText className="h-5 w-5 text-primary" />
             FARHAN JAMIL MENDHRO - Resume
           </DialogTitle>
         </DialogHeader>
-        <ScrollArea className="flex-1 p-8 bg-zinc-950/50">
+        <div className="flex-1 overflow-y-auto bg-zinc-950/50 p-8 custom-scrollbar">
           <div className="max-w-2xl mx-auto space-y-10 font-sans text-slate-300">
             {/* Header */}
             <header className="text-center space-y-4">
@@ -159,8 +159,8 @@ const ResumeModal = ({ children }: { children: React.ReactNode }) => {
               </div>
             </section>
           </div>
-        </ScrollArea>
-        <div className="p-4 border-t border-white/5 bg-background text-center">
+        </div>
+        <div className="p-4 border-t border-white/5 bg-background text-center shrink-0">
            <Button variant="ghost" size="sm" className="font-mono text-[10px] text-muted-foreground hover:text-white" onClick={() => window.print()}>
              [CTRL + P] to Print
            </Button>
