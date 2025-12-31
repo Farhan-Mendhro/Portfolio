@@ -18,11 +18,156 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter }
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { 
+  Dialog, 
+  DialogContent, 
+  DialogHeader, 
+  DialogTitle, 
+  DialogTrigger 
+} from "@/components/ui/dialog";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 // Background Image (generated)
 import bgImage from "@assets/generated_images/subtle_dark_cyber_grid_background_texture.png";
 
 // --- Components ---
+
+const ResumeModal = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <Dialog>
+      <DialogTrigger asChild>
+        {children}
+      </DialogTrigger>
+      <DialogContent className="max-w-4xl max-h-[90vh] bg-background border-white/10 overflow-hidden flex flex-col p-0">
+        <DialogHeader className="p-6 border-b border-white/5">
+          <DialogTitle className="font-mono text-xl flex items-center gap-2">
+            <FileText className="h-5 w-5 text-primary" />
+            FARHAN JAMIL MENDHRO - Resume
+          </DialogTitle>
+        </DialogHeader>
+        <ScrollArea className="flex-1 p-8 bg-zinc-950/50">
+          <div className="max-w-2xl mx-auto space-y-10 font-sans text-slate-300">
+            {/* Header */}
+            <header className="text-center space-y-4">
+              <h1 className="text-4xl font-bold tracking-tight text-white uppercase font-mono">Farhan Jamil Mendhro</h1>
+              <p className="text-primary font-mono text-lg font-medium tracking-widest">DEVOPS ENGINEER</p>
+              <div className="text-sm text-muted-foreground font-mono flex flex-wrap justify-center gap-4">
+                <span>Karachi, Pakistan</span>
+                <span className="text-white/20">|</span>
+                <span>farhanmendhro24@gmail.com</span>
+                <span className="text-white/20">|</span>
+                <span>Contact: Available upon request</span>
+              </div>
+            </header>
+
+            {/* Summary */}
+            <section className="bg-white/5 p-6 rounded-lg border border-white/5 italic leading-relaxed text-center">
+              "Student passionate about DevOps and cloud infrastructure. Self-learning Linux, AWS cloud services, and
+              containerization technologies. Completed multiple AWS certifications and currently building hands-on skills
+              with Docker. Goal is to become a DevOps engineer."
+            </section>
+
+            {/* Skills */}
+            <section className="space-y-4">
+              <h2 className="font-mono text-sm uppercase tracking-[0.3em] text-primary border-b border-primary/20 pb-2">Area of Skills</h2>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 font-mono text-xs">
+                <div className="flex items-center gap-2"><div className="h-1.5 w-1.5 bg-primary rounded-full"></div> Linux Fundamentals</div>
+                <div className="flex items-center gap-2"><div className="h-1.5 w-1.5 bg-primary rounded-full"></div> Process Management</div>
+                <div className="flex items-center gap-2"><div className="h-1.5 w-1.5 bg-primary rounded-full"></div> AWS Cloud Basics</div>
+                <div className="flex items-center gap-2"><div className="h-1.5 w-1.5 bg-primary rounded-full"></div> User/File Management</div>
+                <div className="flex items-center gap-2"><div className="h-1.5 w-1.5 bg-primary rounded-full"></div> System Monitoring</div>
+                <div className="flex items-center gap-2"><div className="h-1.5 w-1.5 bg-primary rounded-full"></div> Docker (Learning)</div>
+              </div>
+            </section>
+
+            {/* Achievements */}
+            <section className="space-y-4">
+              <h2 className="font-mono text-sm uppercase tracking-[0.3em] text-primary border-b border-primary/20 pb-2">Key Achievements</h2>
+              <ul className="space-y-3 list-none">
+                <li className="flex gap-3 text-sm"><ChevronRight className="h-4 w-4 text-primary shrink-0 mt-0.5" /> Completed 8 AWS Educate training badges covering cloud fundamentals.</li>
+                <li className="flex gap-3 text-sm"><ChevronRight className="h-4 w-4 text-primary shrink-0 mt-0.5" /> Learned Linux command-line basics through self-study.</li>
+                <li className="flex gap-3 text-sm"><ChevronRight className="h-4 w-4 text-primary shrink-0 mt-0.5" /> Currently learning Docker containerization.</li>
+                <li className="flex gap-3 text-sm"><ChevronRight className="h-4 w-4 text-primary shrink-0 mt-0.5" /> Self-directed career shift toward DevOps field.</li>
+              </ul>
+            </section>
+
+            {/* Certifications */}
+            <section className="space-y-4">
+              <h2 className="font-mono text-sm uppercase tracking-[0.3em] text-primary border-b border-primary/20 pb-2">Certifications</h2>
+              <div className="space-y-4">
+                <div>
+                  <h3 className="text-white font-bold mb-2">AWS Cloud Fundamentals</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-1 text-xs text-muted-foreground font-mono">
+                    <p>• AWS Educate Introduction to Cloud 101</p>
+                    <p>• AWS Educate Getting Started with Storage</p>
+                    <p>• AWS Educate Getting Started with Compute</p>
+                    <p>• AWS Educate Getting Started with Networking</p>
+                    <p>• AWS Educate Getting Started with Databases</p>
+                    <p>• AWS Educate Getting Started with Cloud Ops</p>
+                    <p>• AWS Educate Getting Started with Security</p>
+                    <p>• AWS Educate Getting Started with Serverless</p>
+                  </div>
+                </div>
+                <a href="https://www.credly.com/users/farhan-mendhro/badges" target="_blank" className="inline-flex items-center gap-2 text-primary hover:underline text-xs font-mono">
+                  View all badges on Credly <ExternalLink className="h-3 w-3" />
+                </a>
+              </div>
+            </section>
+
+            {/* Education */}
+            <section className="space-y-4">
+              <h2 className="font-mono text-sm uppercase tracking-[0.3em] text-primary border-b border-primary/20 pb-2">Education</h2>
+              <div className="border-l-2 border-white/5 pl-4 space-y-1">
+                <h3 className="text-white font-bold">Advanced Diploma in Software Engineering (ADSE)</h3>
+                <p className="text-primary text-sm font-mono">Aptech Computer Education | May 2023 - Present</p>
+                <div className="text-xs text-muted-foreground font-mono pt-1">
+                  <p>• Currently in 2nd year</p>
+                  <p>• Expected completion: 2026</p>
+                </div>
+              </div>
+            </section>
+
+            {/* Technical Skills */}
+            <section className="space-y-4 pb-8">
+              <h2 className="font-mono text-sm uppercase tracking-[0.3em] text-primary border-b border-primary/20 pb-2">Technical Skills</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 text-sm">
+                <div className="flex justify-between items-center border-b border-white/5 pb-1">
+                  <span className="font-mono text-xs uppercase text-muted-foreground">Operating Systems</span>
+                  <span className="text-white">Linux (Ubuntu)</span>
+                </div>
+                <div className="flex justify-between items-center border-b border-white/5 pb-1">
+                  <span className="font-mono text-xs uppercase text-muted-foreground">Cloud Platform</span>
+                  <span className="text-white">AWS (EC2, S3, RDS)</span>
+                </div>
+                <div className="flex justify-between items-center border-b border-white/5 pb-1">
+                  <span className="font-mono text-xs uppercase text-muted-foreground">Containerization</span>
+                  <span className="text-white">Docker (In Progress)</span>
+                </div>
+                <div className="flex justify-between items-center border-b border-white/5 pb-1">
+                  <span className="font-mono text-xs uppercase text-muted-foreground">Scripting</span>
+                  <span className="text-white">Bash (Basic)</span>
+                </div>
+                <div className="flex justify-between items-center border-b border-white/5 pb-1">
+                  <span className="font-mono text-xs uppercase text-muted-foreground">Version Control</span>
+                  <span className="text-white">Git (Basic)</span>
+                </div>
+                <div className="flex justify-between items-center border-b border-white/5 pb-1">
+                  <span className="font-mono text-xs uppercase text-muted-foreground">IaC</span>
+                  <span className="text-primary animate-pulse">Roadmap</span>
+                </div>
+              </div>
+            </section>
+          </div>
+        </ScrollArea>
+        <div className="p-4 border-t border-white/5 bg-background text-center">
+           <Button variant="ghost" size="sm" className="font-mono text-[10px] text-muted-foreground hover:text-white" onClick={() => window.print()}>
+             [CTRL + P] to Print
+           </Button>
+        </div>
+      </DialogContent>
+    </Dialog>
+  );
+};
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -70,9 +215,11 @@ const Navbar = () => {
               {link.name}
             </button>
           ))}
-          <Button variant="outline" className="font-mono text-xs ml-4 border-primary/20 text-primary hover:bg-primary/10">
-            Resume <FileText className="ml-2 h-3 w-3" />
-          </Button>
+          <ResumeModal>
+            <Button variant="outline" className="font-mono text-xs ml-4 border-primary/20 text-primary hover:bg-primary/10">
+              Resume <FileText className="ml-2 h-3 w-3" />
+            </Button>
+          </ResumeModal>
         </div>
 
         {/* Mobile Nav */}
@@ -94,6 +241,11 @@ const Navbar = () => {
                     {link.name}
                   </button>
                 ))}
+                <ResumeModal>
+                  <Button variant="outline" className="font-mono text-base border-primary/20 text-primary w-full">
+                    View Resume <FileText className="ml-2 h-4 w-4" />
+                  </Button>
+                </ResumeModal>
               </div>
             </SheetContent>
           </Sheet>
