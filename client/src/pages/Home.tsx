@@ -185,7 +185,7 @@ const About = () => {
               I am currently transitioning into the world of <span className="text-primary font-medium">DevOps</span>, driven by a deep passion for infrastructure automation and building reliable, scalable systems.
             </p>
             <p>
-              My journey started in <span className="text-white font-medium">August 2024</span>. Since then, I've been immersing myself in the modern cloud-native stack, learning to bridge the gap between development and operations.
+              My journey started in <span className="text-white font-medium">August 2025</span>. Since then, I've been immersing myself in the modern cloud-native stack, learning to bridge the gap between development and operations.
             </p>
             <p>
               I believe in "Everything as Code" and am excited to solve complex infrastructure challenges.
@@ -201,7 +201,7 @@ const About = () => {
             </div>
             <CardContent className="p-6 text-green-400">
               <p><span className="text-blue-400">const</span> <span className="text-yellow-400">currentFocus</span> = <span className="text-orange-400">"DevOps Engineering"</span>;</p>
-              <p className="mt-2"><span className="text-blue-400">const</span> <span className="text-yellow-400">started</span> = <span className="text-orange-400">"August 2024"</span>;</p>
+              <p className="mt-2"><span className="text-blue-400">const</span> <span className="text-yellow-400">started</span> = <span className="text-orange-400">"August 2025"</span>;</p>
               <p className="mt-2"><span className="text-blue-400">let</span> <span className="text-yellow-400">goals</span> = [</p>
               <p className="pl-4 text-orange-400">"Automate Everything",</p>
               <p className="pl-4 text-orange-400">"Master Kubernetes",</p>
@@ -219,9 +219,9 @@ const About = () => {
 const LearningPath = () => {
   const steps = [
     { title: "Linux & Networking", status: "completed", icon: <SiLinux className="h-6 w-6" />, date: "Aug 2024 - Oct 2024" },
-    { title: "Docker & Containers", status: "in-progress", icon: <SiDocker className="h-6 w-6" />, date: "Nov 2024 - Present" },
+    { title: "Docker & Containers", status: "completed", icon: <SiDocker className="h-6 w-6" />, date: "Nov 2024 - Jan 2025" },
     { title: "AWS Cloud Fundamentals", status: "in-progress", icon: <FaAws className="h-6 w-6" />, date: "Dec 2024 - Present" },
-    { title: "Python for DevOps", status: "upcoming", icon: <SiPython className="h-6 w-6" />, date: "Upcoming" },
+    { title: "Python for DevOps", status: "in-progress", icon: <SiPython className="h-6 w-6" />, date: "Feb 2025 - Present" },
     { title: "Kubernetes Orchestration", status: "upcoming", icon: <SiKubernetes className="h-6 w-6" />, date: "Upcoming" },
     { title: "Ansible Configuration", status: "upcoming", icon: <SiAnsible className="h-6 w-6" />, date: "Upcoming" },
     { title: "Terraform IaC", status: "upcoming", icon: <SiTerraform className="h-6 w-6" />, date: "Upcoming" },
