@@ -547,8 +547,10 @@ const Projects = () => {
             Expect to see Dockerized applications, CI/CD pipelines, and IaC implementations here soon.
           </p>
           <div className="flex gap-4">
-            <Button disabled variant="secondary" className="opacity-50 cursor-not-allowed">
-              Coming Soon
+            <Button variant="secondary" className="gap-2" asChild>
+              <a href="https://github.com/Farhan-Mendhro?tab=repositories" target="_blank" rel="noopener noreferrer">
+                <SiGithub className="h-4 w-4" /> View Repositories
+              </a>
             </Button>
           </div>
         </div>
@@ -567,7 +569,7 @@ const Footer = () => {
         </div>
 
         <div className="flex gap-6">
-          <a href="#" className="text-muted-foreground hover:text-white transition-colors">
+          <a href="https://github.com/Farhan-Mendhro?tab=repositories" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-white transition-colors">
             <SiGithub className="h-6 w-6" />
           </a>
           <a href="#" className="text-muted-foreground hover:text-[#0A66C2] transition-colors">
