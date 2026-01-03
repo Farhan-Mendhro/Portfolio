@@ -430,11 +430,13 @@ const Skills = () => {
   ];
 
   const nextStack = [
-    { name: "Python", icon: <SiPython className="h-8 w-8 text-blue-400" /> },
-    { name: "Kubernetes", icon: <SiKubernetes className="h-8 w-8 text-blue-600" /> },
     { name: "Ansible", icon: <SiAnsible className="h-8 w-8 text-white" /> },
     { name: "Terraform", icon: <SiTerraform className="h-8 w-8 text-purple-500" /> },
-    { name: "Jenkins", icon: <SiJenkins className="h-8 w-8 text-gray-300" /> },
+    { name: "Kubernetes", icon: <SiKubernetes className="h-8 w-8 text-blue-600" /> },
+    { name: "GitHub Actions", icon: <SiGithub className="h-8 w-8 text-white" /> },
+    { name: "AWS", icon: <FaAws className="h-8 w-8 text-orange-500" /> },
+    { name: "Python", icon: <SiPython className="h-8 w-8 text-blue-400" /> },
+    { name: "Prometheus", icon: <SiPrometheus className="h-8 w-8 text-orange-600" /> },
     { name: "Grafana", icon: <SiGrafana className="h-8 w-8 text-orange-400" /> },
   ];
 
