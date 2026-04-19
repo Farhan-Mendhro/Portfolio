@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { 
-  SiDocker, SiBash, SiLinux, SiPython, SiKubernetes, 
+  SiDocker, SiLinux, SiPython, SiKubernetes, 
   SiAnsible, SiTerraform, SiJenkins, SiPrometheus, SiGrafana, 
   SiGit, SiLinkedin, SiGithub, SiCredly 
 } from "react-icons/si";
@@ -374,7 +374,6 @@ const LearningPath = () => {
     { title: "Linux & Networking", status: "completed", icon: <SiLinux className="h-6 w-6" />, date: "Aug 2025 - Oct 2025" },
     { title: "Git", status: "completed", icon: <SiGit className="h-6 w-6" />, date: "Oct 2025 - Nov 2025" },
     { title: "Docker & Containers", status: "completed", icon: <SiDocker className="h-6 w-6" />, date: "Nov 2025 - Jan 2026" },
-    { title: "Bash Scripting", status: "completed", icon: <SiBash classname="h-6 w-6" />, date: "Jan 2026 - March 2026" },
     { title: "Ansible Configuration", status: "upcoming", icon: <SiAnsible className="h-6 w-6" />, date: "Upcoming" },
     { title: "Terraform IaC", status: "upcoming", icon: <SiTerraform className="h-6 w-6" />, date: "Upcoming" },
     { title: "Kubernetes Orchestration", status: "upcoming", icon: <SiKubernetes className="h-6 w-6" />, date: "Upcoming" },
