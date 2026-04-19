@@ -372,6 +372,7 @@ const About = () => {
 const LearningPath = () => {
   const steps = [
     { title: "Linux & Networking", status: "completed", icon: <SiLinux className="h-6 w-6" />, date: "Aug 2024 - Oct 2024" },
+    { title: "Bash Scripting", status: "completed", icon: <Terminal className="h-6 w-6" />, date: "Oct 2024 - Nov 2024" },
     { title: "Git", status: "completed", icon: <SiGit className="h-6 w-6" />, date: "Oct 2024 - Nov 2024" },
     { title: "Docker & Containers", status: "completed", icon: <SiDocker className="h-6 w-6" />, date: "Nov 2024 - Jan 2025" },
     { title: "Ansible Configuration", status: "upcoming", icon: <SiAnsible className="h-6 w-6" />, date: "Upcoming" },
@@ -426,6 +427,7 @@ const Skills = () => {
     { name: "Docker", icon: <SiDocker className="h-8 w-8 text-blue-500" /> },
     { name: "AWS EC2/S3", icon: <FaAws className="h-8 w-8 text-orange-500" /> },
     { name: "Linux", icon: <SiLinux className="h-8 w-8 text-yellow-500" /> },
+    { name: "Bash Scripting", icon: <Terminal className="h-8 w-8 text-gray-300" /> },
     { name: "Git", icon: <SiGit className="h-8 w-8 text-red-500" /> },
   ];
 
