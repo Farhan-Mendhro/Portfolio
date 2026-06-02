@@ -125,7 +125,23 @@ const ResumeModal = ({ children }: { children: React.ReactNode }) => {
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="h-1.5 w-1.5 bg-primary rounded-full"></div>{" "}
-                  Docker (Learning)
+                  Docker Multi-stage
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="h-1.5 w-1.5 bg-primary rounded-full"></div>{" "}
+                  Docker Compose
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="h-1.5 w-1.5 bg-primary rounded-full"></div>{" "}
+                  Ansible Playbook
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="h-1.5 w-1.5 bg-primary rounded-full"></div>{" "}
+                  Ansible Vault
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="h-1.5 w-1.5 bg-primary rounded-full"></div>{" "}
+                  Ansible Galaxy
                 </div>
               </div>
             </section>
@@ -228,7 +244,7 @@ const ResumeModal = ({ children }: { children: React.ReactNode }) => {
                   <span className="font-mono text-xs uppercase text-muted-foreground">
                     Containerization
                   </span>
-                  <span className="text-white">Docker (In Progress)</span>
+                  <span className="text-white">Docker</span>
                 </div>
                 <div className="flex justify-between items-center border-b border-white/5 pb-1">
                   <span className="font-mono text-xs uppercase text-muted-foreground">
@@ -241,6 +257,12 @@ const ResumeModal = ({ children }: { children: React.ReactNode }) => {
                     Version Control
                   </span>
                   <span className="text-white">Git (Basic)</span>
+                </div>
+                <div className="flex justify-between items-center border-b border-white/5 pb-1">
+                  <span className="font-mono text-xs uppercase text-muted-foreground">
+                    Config Management
+                  </span>
+                  <span className="text-white">Ansible</span>
                 </div>
                 <div className="flex justify-between items-center border-b border-white/5 pb-1">
                   <span className="font-mono text-xs uppercase text-muted-foreground">
