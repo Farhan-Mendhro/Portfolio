@@ -90,11 +90,9 @@ const ResumeModal = ({ children }: { children: React.ReactNode }) => {
 
             {/* Summary */}
             <section className="bg-white/5 p-6 rounded-lg border border-white/5 italic leading-relaxed text-center">
-              "Student passionate about DevOps and cloud infrastructure.
-              Self-learning Linux, AWS cloud services, and containerization
-              technologies. Completed multiple AWS certifications and currently
-              building hands-on skills with Docker. Goal is to become a DevOps
-              engineer."
+              "DevOps Engineer in training with hands-on experience in Linux, Git, Bash Scripting, Docker, and Ansible. 
+              Specialized in building real-world AWS infrastructure automation projects using Ansible. 
+              Passionate about automating systems and building reliable cloud-native architectures."
             </section>
 
             {/* Skills */}
@@ -154,20 +152,19 @@ const ResumeModal = ({ children }: { children: React.ReactNode }) => {
               <ul className="space-y-3 list-none">
                 <li className="flex gap-3 text-sm">
                   <ChevronRight className="h-4 w-4 text-primary shrink-0 mt-0.5" />{" "}
-                  Completed 8 AWS Educate training badges covering cloud
-                  fundamentals.
+                  Engineered robust infrastructure automation pipelines on AWS using Ansible.
                 </li>
                 <li className="flex gap-3 text-sm">
                   <ChevronRight className="h-4 w-4 text-primary shrink-0 mt-0.5" />{" "}
-                  Learned Linux command-line basics through self-study.
+                  Automated scalable deployments with Docker Multi-stage builds and Docker Compose.
                 </li>
                 <li className="flex gap-3 text-sm">
                   <ChevronRight className="h-4 w-4 text-primary shrink-0 mt-0.5" />{" "}
-                  Currently learning Docker containerization.
+                  Implemented secure Policy as Code and dynamic EC2 provisioning workflows.
                 </li>
                 <li className="flex gap-3 text-sm">
                   <ChevronRight className="h-4 w-4 text-primary shrink-0 mt-0.5" />{" "}
-                  Self-directed career shift toward DevOps field.
+                  Contributed DevOps solutions and deployment pipelines to Expo Management Center.
                 </li>
               </ul>
             </section>
@@ -826,32 +823,67 @@ const Certifications = () => {
 };
 
 const Projects = () => {
+  const projects = [
+    {
+      title: "AWS Infrastructure Automation",
+      description: "Automating AWS infrastructure deployment and configuration using Ansible playbooks.",
+      link: "https://github.com/Farhan-Mendhro/aws-infrastructure-automation-ansible",
+      tags: ["Ansible", "AWS", "Automation"]
+    },
+    {
+      title: "AWS EC2 Provisioner",
+      description: "Dynamic provisioning and configuration of AWS EC2 instances with Ansible.",
+      link: "https://github.com/Farhan-Mendhro/ansible-aws-ec2-provisioner",
+      tags: ["Ansible", "AWS EC2", "IaC"]
+    },
+    {
+      title: "S3 Policy As Code",
+      description: "Implementing AWS S3 bucket policies and security configurations as code.",
+      link: "https://github.com/Farhan-Mendhro/ansible-s3-policy-as-code",
+      tags: ["Ansible", "AWS S3", "Security"]
+    },
+    {
+      title: "Docker Automation",
+      description: "Automating Docker container deployments and management workflows using Ansible.",
+      link: "https://github.com/Farhan-Mendhro/ansible-docker-automation",
+      tags: ["Ansible", "Docker", "Containers"]
+    },
+    {
+      title: "Expo Management Center",
+      description: "Contributed DevOps infrastructure and deployment pipelines for an event management platform.",
+      link: "https://github.com/Hsk4/Expo_Management_Center",
+      tags: ["DevOps", "CI/CD", "Infrastructure"]
+    }
+  ];
+
   return (
     <section id="projects" className="py-24 bg-secondary/10">
       <div className="container px-6 max-w-5xl mx-auto">
         <SectionHeading title="Projects" />
 
-        <div className="border border-dashed border-white/20 rounded-xl p-12 flex flex-col items-center justify-center text-center bg-card/30">
-          <div className="h-20 w-20 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-            <Code2 className="h-10 w-10 text-primary" />
-          </div>
-          <h3 className="text-2xl font-bold mb-3">Work in Progress</h3>
-          <p className="text-muted-foreground max-w-md mx-auto mb-8">
-            Projects are currently being built as I progress through my learning
-            path. Expect to see Dockerized applications, CI/CD pipelines, and
-            IaC implementations here soon.
-          </p>
-          <div className="flex gap-4">
-            <Button variant="secondary" className="gap-2" asChild>
-              <a
-                href="https://github.com/Farhan-Mendhro?tab=repositories"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <SiGithub className="h-4 w-4" /> View Repositories
-              </a>
-            </Button>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {projects.map((project, i) => (
+            <Card key={i} className="bg-card/50 border-white/5 hover:border-primary/30 transition-colors flex flex-col">
+              <CardHeader>
+                <CardTitle className="flex items-center justify-between">
+                  <span className="font-mono text-lg">{project.title}</span>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                    <SiGithub className="h-5 w-5" />
+                  </a>
+                </CardTitle>
+                <CardDescription className="text-muted-foreground mt-2">
+                  {project.description}
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="mt-auto">
+                <div className="flex flex-wrap gap-2">
+                  {project.tags.map(tag => (
+                    <Badge key={tag} variant="secondary" className="font-mono text-xs">{tag}</Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
