@@ -557,9 +557,9 @@ const LearningPath = () => {
     },
     {
       title: "Ansible Configuration",
-      status: "upcoming",
+      status: "completed",
       icon: <SiAnsible className="h-6 w-6" />,
-      date: "Upcoming",
+      date: "Feb 2026 - Mar 2026",
     },
     {
       title: "Terraform IaC",
@@ -655,17 +655,13 @@ const LearningPath = () => {
 const Skills = () => {
   const currentStack = [
     { name: "Docker", icon: <SiDocker className="h-8 w-8 text-blue-500" /> },
-    {
-      name: "Bash Scripting",
-      icon: <Terminal className="h-8 w-8 text-gray-300" />,
-    },
+    { name: "Ansible", icon: <SiAnsible className="h-8 w-8 text-white" /> },
     { name: "AWS EC2/S3", icon: <FaAws className="h-8 w-8 text-orange-500" /> },
     { name: "Linux", icon: <SiLinux className="h-8 w-8 text-yellow-500" /> },
     { name: "Git", icon: <SiGit className="h-8 w-8 text-red-500" /> },
   ];
 
   const nextStack = [
-    { name: "Ansible", icon: <SiAnsible className="h-8 w-8 text-white" /> },
     {
       name: "Terraform",
       icon: <SiTerraform className="h-8 w-8 text-purple-500" />,
