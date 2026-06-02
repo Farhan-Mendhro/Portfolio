@@ -152,7 +152,7 @@ const ResumeModal = ({ children }: { children: React.ReactNode }) => {
               <ul className="space-y-3 list-none">
                 <li className="flex gap-3 text-sm">
                   <ChevronRight className="h-4 w-4 text-primary shrink-0 mt-0.5" />{" "}
-                  Engineered robust infrastructure automation pipelines on AWS using Ansible.
+                  Built real-world AWS infrastructure automation projects using Ansible, including EC2 provisioning, S3 policy as code, and Docker automation.
                 </li>
                 <li className="flex gap-3 text-sm">
                   <ChevronRight className="h-4 w-4 text-primary shrink-0 mt-0.5" />{" "}
@@ -863,26 +863,28 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, i) => (
-            <Card key={i} className="bg-card/50 border-white/5 hover:border-primary/30 transition-colors flex flex-col">
-              <CardHeader>
-                <CardTitle className="flex items-center justify-between">
-                  <span className="font-mono text-lg">{project.title}</span>
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                    <SiGithub className="h-5 w-5" />
-                  </a>
-                </CardTitle>
-                <CardDescription className="text-muted-foreground mt-2">
-                  {project.description}
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="mt-auto">
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map(tag => (
-                    <Badge key={tag} variant="secondary" className="font-mono text-xs">{tag}</Badge>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+            <a href={project.link} target="_blank" rel="noopener noreferrer" key={i} className="block group">
+              <Card className="bg-card/50 border-white/5 group-hover:border-primary/50 transition-colors flex flex-col h-full">
+                <CardHeader>
+                  <CardTitle className="flex items-center justify-between">
+                    <span className="font-mono text-lg group-hover:text-primary transition-colors">{project.title}</span>
+                    <span className="text-muted-foreground group-hover:text-primary transition-colors">
+                      <SiGithub className="h-5 w-5" />
+                    </span>
+                  </CardTitle>
+                  <CardDescription className="text-muted-foreground mt-2">
+                    {project.description}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="mt-auto">
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.map(tag => (
+                      <Badge key={tag} variant="secondary" className="font-mono text-xs">{tag}</Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </a>
           ))}
         </div>
       </div>
