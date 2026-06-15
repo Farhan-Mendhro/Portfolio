@@ -831,10 +831,10 @@ const Projects = () => {
       tags: ["Ansible", "AWS", "Automation"]
     },
     {
-      title: "AWS EC2 Provisioner",
-      description: "Dynamic provisioning and configuration of AWS EC2 instances with Ansible.",
-      link: "https://github.com/Farhan-Mendhro/ansible-aws-ec2-provisioner",
-      tags: ["Ansible", "AWS EC2", "IaC"]
+      title: "Infrastructure Orchestration",
+      description: "End-to-end infrastructure orchestration pipeline provisioning 5 AWS EC2 instances via Terraform and Spacelift, configuring Docker across all nodes via Ansible, and deploying a containerized Prometheus and Grafana monitoring stack with dynamic node assignment and host-network telemetry collection.",
+      link: "https://github.com/Farhan-Mendhro/infrastructure-orchestration",
+      tags: ["Terraform", "Ansible", "AWS", "Docker", "Prometheus", "Grafana"]
     },
     {
       title: "S3 Policy As Code",
@@ -844,9 +844,9 @@ const Projects = () => {
     },
     {
       title: "Docker Automation",
-      description: "Automating Docker container deployments and management workflows using Ansible.",
+      description: "Ansible Playbook — Docker Install on EC2. Automates Docker installation, ensures service persistence across reboots, and configures user permissions for non-root Docker management.",
       link: "https://github.com/Farhan-Mendhro/ansible-docker-automation",
-      tags: ["Ansible", "Docker", "Containers"]
+      tags: ["Ansible", "Docker", "EC2"]
     },
     {
       title: "Expo Management Center",
@@ -855,10 +855,10 @@ const Projects = () => {
       tags: ["DevOps", "CI/CD", "Infrastructure"]
     },
     {
-      title: "Infrastructure Orchestration",
-      description: "End-to-end infrastructure orchestration pipeline provisioning 5 AWS EC2 instances via Terraform and Spacelift, configuring Docker across all nodes via Ansible, and deploying a containerized Prometheus and Grafana monitoring stack with dynamic node assignment and host-network telemetry collection.",
-      link: "https://github.com/Farhan-Mendhro/infrastructure-orchestration",
-      tags: ["Terraform", "Ansible", "AWS", "Docker", "Prometheus", "Grafana"]
+      title: "AWS EC2 Provisioner",
+      description: "Dynamic provisioning and configuration of AWS EC2 instances with Ansible.",
+      link: "https://github.com/Farhan-Mendhro/ansible-aws-ec2-provisioner",
+      tags: ["Ansible", "AWS EC2", "IaC"]
     }
   ];
 
