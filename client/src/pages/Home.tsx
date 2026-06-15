@@ -582,9 +582,9 @@ const LearningPath = () => {
     },
     {
       title: "Terraform IaC",
-      status: "completed",
+      status: "in-progress",
       icon: <SiTerraform className="h-6 w-6" />,
-      date: "Mar 2026",
+      date: "Mar 2026 - Present",
     },
     {
       title: "Kubernetes Orchestration",
