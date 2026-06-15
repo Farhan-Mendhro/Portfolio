@@ -853,6 +853,12 @@ const Projects = () => {
       description: "Contributed DevOps infrastructure and deployment pipelines for an event management platform.",
       link: "https://github.com/Hsk4/Expo_Management_Center",
       tags: ["DevOps", "CI/CD", "Infrastructure"]
+    },
+    {
+      title: "Infrastructure Orchestration",
+      description: "End-to-end infrastructure orchestration pipeline provisioning 5 AWS EC2 instances via Terraform and Spacelift, configuring Docker across all nodes via Ansible, and deploying a containerized Prometheus and Grafana monitoring stack with dynamic node assignment and host-network telemetry collection.",
+      link: "https://github.com/Farhan-Mendhro/infrastructure-orchestration",
+      tags: ["Terraform", "Ansible", "AWS", "Docker", "Prometheus", "Grafana"]
     }
   ];
 
