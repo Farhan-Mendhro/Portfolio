@@ -582,9 +582,9 @@ const LearningPath = () => {
     },
     {
       title: "Terraform IaC",
-      status: "upcoming",
+      status: "completed",
       icon: <SiTerraform className="h-6 w-6" />,
-      date: "Upcoming",
+      date: "Mar 2026",
     },
     {
       title: "Kubernetes Orchestration",
@@ -673,6 +673,7 @@ const LearningPath = () => {
 
 const Skills = () => {
   const currentStack = [
+    { name: "Terraform", icon: <SiTerraform className="h-8 w-8 text-purple-500" /> },
     { name: "Docker", icon: <SiDocker className="h-8 w-8 text-blue-500" /> },
     { name: "Ansible", icon: <SiAnsible className="h-8 w-8 text-white" /> },
     { name: "AWS EC2/S3", icon: <FaAws className="h-8 w-8 text-orange-500" /> },
@@ -681,10 +682,6 @@ const Skills = () => {
   ];
 
   const nextStack = [
-    {
-      name: "Terraform",
-      icon: <SiTerraform className="h-8 w-8 text-purple-500" />,
-    },
     {
       name: "Kubernetes",
       icon: <SiKubernetes className="h-8 w-8 text-blue-600" />,
