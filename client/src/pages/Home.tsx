@@ -572,19 +572,19 @@ const LearningPath = () => {
       title: "Bash Scripting",
       status: "completed",
       icon: <Terminal className="h-6 w-6" />,
-      date: "Jan 2026 - Feb 2026",
+      date: "Jan 2026 - Mar 2026",
     },
     {
       title: "Ansible Configuration",
       status: "completed",
       icon: <SiAnsible className="h-6 w-6" />,
-      date: "Feb 2026 - Mar 2026",
+      date: "Apr 2026 - May 2026",
     },
     {
       title: "Terraform IaC",
       status: "in-progress",
       icon: <SiTerraform className="h-6 w-6" />,
-      date: "Mar 2026 - Present",
+      date: "May 2026 - Present",
     },
     {
       title: "Kubernetes Orchestration",
