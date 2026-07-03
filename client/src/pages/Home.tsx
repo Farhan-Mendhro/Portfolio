@@ -588,9 +588,9 @@ const LearningPath = () => {
     },
     {
       title: "Kubernetes Orchestration",
-      status: "upcoming",
+      status: "in-progress",
       icon: <SiKubernetes className="h-6 w-6" />,
-      date: "Upcoming",
+      date: "May 2026 - Present",
     },
     {
       title: "GitHub Actions & ArgoCD",
@@ -673,6 +673,7 @@ const LearningPath = () => {
 
 const Skills = () => {
   const currentStack = [
+    { name: "Kubernetes", icon: <SiKubernetes className="h-8 w-8 text-blue-600" /> },
     { name: "Terraform", icon: <SiTerraform className="h-8 w-8 text-purple-500" /> },
     { name: "Docker", icon: <SiDocker className="h-8 w-8 text-blue-500" /> },
     { name: "Ansible", icon: <SiAnsible className="h-8 w-8 text-white" /> },
@@ -682,10 +683,6 @@ const Skills = () => {
   ];
 
   const nextStack = [
-    {
-      name: "Kubernetes",
-      icon: <SiKubernetes className="h-8 w-8 text-blue-600" />,
-    },
     {
       name: "GitHub Actions",
       icon: <SiGithub className="h-8 w-8 text-white" />,
