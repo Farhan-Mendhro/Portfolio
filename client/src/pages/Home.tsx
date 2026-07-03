@@ -590,7 +590,7 @@ const LearningPath = () => {
       title: "Kubernetes Orchestration",
       status: "in-progress",
       icon: <SiKubernetes className="h-6 w-6" />,
-      date: "May 2026 - Present",
+      date: "Jun 2026 - Present",
     },
     {
       title: "GitHub Actions & ArgoCD",
